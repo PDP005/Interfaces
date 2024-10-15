@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+#cabecera{
+  
+    margin-left: 50%;
+    height: 10vh;
+}
+.enlaces{
+    color: black;
+    margin-left: 0;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 3px solid black ; 
+    display: block;
+    float: left;
+    padding-top: 35px;
+    /* comoo hacer que ocupe lo qu etiene q ocupar*/
+}
+.enlaces:hover{
+    background-color: black;
+    color: white;
+}
+.enlaces + a{
+    margin-left: 12.5%;
+}
+#container{
+    background-image: url(imagenes/lisboaplaza.webp);
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+
+}
+#logo{
+    width: 100px;
+    margin-top:5% ;
+    margin-left: 5%;
+    position: absolute;
+}
+#si{
+    text-align: center;
+    padding-top: 50px;
+
+}
+#texto{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 40px;
+    width: 50%;
+}
+.caja{
+    display: inline-block;
+
+}
+
+@media screen and (max-width:800px) {
+    #cabecera{
+        margin-left: 0px;
+        height: auto;
+    }
+    .enlaces{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .enlaces + a{
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    #logo{
+        display: none;
+    }
+    #numeros{
+        font-size: 1.2em;
+    }
+    
+
+}
