@@ -54,27 +54,29 @@
     width: 50%;
 }
 .info {
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+   
+    width: 80%;
     text-align: center;
     color: black;
     font-family: Arial, sans-serif;
+    background-color: blue;
+    margin:auto;
+    margin-top:300px;
 }
 
 .caja{
     display: inline-block;
-
 }
 .item {
     display: inline-block;
     text-align: center;
+    background-color: white;
+    width: 33%;
+
 }
 
 .num {
-    font-size: 50px;
+    font-size: 4em;
     font-weight: bold;
 }
 
