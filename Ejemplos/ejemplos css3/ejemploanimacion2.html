@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Animaciones CSS3 | Funciones</title>
+	<style type="text/css">
+		@keyframes animacion {
+			from {
+				left: 0px;
+			}
+
+			to {
+				left: 150px;
+			}
+		}
+
+		.capa {
+			margin-bottom: 30px;
+			text-align: center;
+			position: relative;
+			width: 300px;
+			height: 60px;
+			font-family: arial;
+			font-size: 22px;
+			font-weight: bold;
+			background-color: rgb(55, 190, 90);
+			animation-name: animacion;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		#capaEase {
+
+			animation-timing-function: ease;
+		}
+
+		#capaLinear {
+			animation-timing-function: linear;
+		}
+
+		#capaEaseIn {
+			animation-timing-function: ease-in;
+		}
+
+		#capaEaseOut {
+			animation-timing-function: ease-out;
+		}
+
+		#capaEaseInOut {
+			animation-timing-function: ease-in-out;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="capa" id="capaEase">
+		Ease
+	</div>
+	<div class="capa" id="capaLinear">
+		Linear
+	</div>
+	<div class="capa" id="capaEaseIn">
+		EaseIn
+	</div>
+	<div class="capa" id="capaEaseOut">
+		EaseOut
+	</div>
+	<div class="capa" id="capaEaseInOut">
+		EaseInOut
+	</div>
+</body></html>

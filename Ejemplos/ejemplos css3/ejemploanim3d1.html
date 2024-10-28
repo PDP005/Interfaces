@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #centrado{
+            position:relative;
+            width:200px;
+            margin:auto;
+            margin-top: 20px;
+        }
+        #uno {
+          position: absolute;
+          animation: turn 4s infinite;
+          background-color: aqua;
+          width:200px;
+          padding-top: 70px;
+          height: 100px;
+          backface-visibility: hidden;
+          text-align:center;
+        }
+        
+        #dos {
+          position: absolute;
+          animation: turn2 4s infinite;
+          background-color: blue;
+          width:200px;
+          padding-top: 70px;
+          height: 100px;
+          text-align:center;
+          transform: rotateY(180deg);
+        }
+         
+                
+        @keyframes turn {
+          to {
+            transform: rotateY(360deg);
+          }
+        }
+        @keyframes turn2 {
+          to {
+            transform: rotateY(-180deg);
+          }
+        }
+        </style>
+</head>
+<body>
+    <div id="centrado">
+    <div id="dos">DOS</div>
+    <div id="uno">UNO</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Diseño para el móvil y la media query la hago para el ordenador -->
+<html>
+
+<head>
+	<!--Para que tome de ancho el ancho del dispositivo-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Para que el padding y el border se incluya en el width y en el height */
+		* {
+			box-sizing: border-box;
+		}
+
+
+		.col {
+			float: left;
+			padding: 15px;
+			/* Cada div que contiene la elipse ocupa el 100% de la línea */
+			width: 100%;
+		}
+
+		/* No se muestra el titulo grande*/
+		.titulo1 {
+			display: none;
+		}
+
+		body {
+			font-family: "Lucida Sans", sans-serif;
+		}
+
+		.header {
+			background-color: #9933cc;
+			color: #ffffff;
+			padding: 15px;
+			text-align: center;
+		}
+
+		.boton {
+			background-color: aqua;
+			width: 200px;
+			padding: 30px;
+			border-radius: 50%;
+			text-align: center;
+			margin: auto;
+		}
+		.mimg{
+				text-align: center;
+				padding-top: 150px;
+			}
+		.mimg > img{
+				max-width:100%;
+				height: auto;
+			}
+
+		/*Media query para ver la página en un ordenador, ancho superior a 600px*/
+		@media only screen and (min-width: 600px) {
+			.col {
+				/* Cada elemento que contiene la elipse comparte línea
+				con los otros dos */
+				width: 33.33%;
+			}
+
+			.titulo2 {
+				/* Se oculta el título pequeño*/
+				display: none;
+
+			}
+
+			.titulo1 {
+				/* Se muestra el título grande */
+				display: block;
+			}
+		
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="header">
+		<h1 class="titulo1">Desarrollo de Aplicaciones Web
+		</h1>
+		<h1 class="titulo2">DAW</h1>
+	</div>
+
+	<div class="row">
+
+		<div class="col">
+			<div class="boton">MARCAS</div>
+		</div>
+
+		<div class="col">
+			<div class="boton">BBDD</div>
+		</div>
+		<div class="col">
+			<div class="boton">PROGRAMACIÓN</div>
+		</div>
+		<div class="mimg">
+			<!--<img src="Imagenweb.jpg" width="587" height="410">-->
+			<img src="Imagenweb.jpg" >
+		</div>
+
+	</div>
+</body>
+
+</html>

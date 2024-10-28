@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flip-card {
+      /*perspective: 1000px;*/
+      width: 200px;
+      height: 200px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #f1c40f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flip-card-back {
+      background-color: #3498db;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <!-- Contenido frontal -->
+        <p>Frente</p>
+      </div>
+      <div class="flip-card-back">
+        <!-- Contenido trasero -->
+        <p>Reverso</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

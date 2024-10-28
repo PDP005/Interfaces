@@ -1,0 +1,53 @@
+<html>
+<head>
+	<style type="text/css">
+		@keyframes animated_div {
+			0% {
+				transform: rotate(0deg);
+				left: 0px;
+			}
+
+			25% {
+				transform: rotate(20deg);
+				left: 0px;
+			}
+
+			50% {
+				transform: rotate(0deg);
+				left: 500px;
+			}
+
+			55% {
+				transform: rotate(0deg);
+				left: 500px;
+			}
+
+			70% {
+				transform: rotate(0deg);
+				left: 500px;
+				background: #1ec7e6;
+			}
+
+			100% {
+				transform: rotate(-360deg);
+				left: 0px;
+			}
+		}
+
+		#animated_div {
+			width: 60px;
+			height: 40px;
+			background-color: #92B901;
+			position: relative;
+			padding: 10px;
+			animation: animated_div 5s 1;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div id="animated_div">
+	</div>
+</body>
+</html>
+

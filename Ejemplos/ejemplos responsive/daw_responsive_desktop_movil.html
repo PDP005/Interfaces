@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Diseño para el ordenador y l media query la hago para el móvil -->
+<html>
+
+<head>
+	<!--Para que tome de ancho el ancho del dispositivo-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Para que el padding y el border se incluya en el width y en el height */
+		* {
+			box-sizing: border-box;
+		}
+
+
+		.col {
+			float: left;
+			padding: 15px;
+			/* Los tres divs comparten línea */
+			width: 33.33%;
+
+		}
+
+		/* No se puestra el titulo2 */
+		.titulo2 {
+			display: none;
+		}
+
+
+
+		body {
+			font-family: "Lucida Sans", sans-serif;
+		}
+
+		.header {
+			background-color: #9933cc;
+			color: #ffffff;
+			padding: 15px;
+			text-align: center;
+		}
+
+		.boton {
+			background-color: aqua;
+			width: 200px;
+			padding: 30px;
+			border-radius: 50%;
+			text-align: center;
+			margin: auto;
+		}
+		.mimg{
+				text-align: center;
+				padding-top: 150px;
+			}
+		.mimg > img{
+				max-width:100%;
+				height: auto;
+			}
+		
+
+		/* Media query para adaptar la página al móvil */
+		@media only screen and (max-width: 600px) {
+		
+			.col {
+				/* Cada elipse ocupa toda la línea */
+				width: 100%;
+				
+			}
+
+			.titulo2 {
+				/* se muestra el título2 */
+				display:block;
+				
+
+			}
+
+			.titulo1 {
+				/* Se oculta el título 1 */
+				display:none;
+				
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="header">
+		<h1 class="titulo1">Desarrollo de aplicaciones Web</h1>
+		<h1 class="titulo2">DAW</h1>
+	</div>
+
+	<div class="row">
+
+		<div class="col">
+			<div class="boton">MARCAS</div>
+		</div>
+
+		<div class="col">
+			<div class="boton">BBDD</div>
+		</div>
+		<div class="col">
+			<div class="boton">PROGRAMACIÓN</div>
+		</div>
+		<div class="mimg">
+			<img src="Imagenweb.jpg" width="587" height="410">
+		</div>
+
+		<div class="mimg">
+			<!--<img src="Imagenweb.jpg" width="587" height="410">-->
+			<img src="Imagenweb.jpg" >
+		</div>
+
+	</div>
+</body>
+
+</html>

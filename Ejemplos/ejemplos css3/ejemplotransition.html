@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#uno {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+#uno:hover {
+    width: 300px;
+}
+#dos {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 2s, height 4s;
+}
+
+#dos:hover {
+    width: 300px;
+    height: 300px;
+}
+#tres {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#tres:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="uno"></div>
+<div id="dos"></div>
+<div id="tres"></div>
+<p>Situad el ratón sobre los elementos para ver el efecto de transition.</p>
+
+</body>
+</html>
