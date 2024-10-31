@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Verdana' ;
+    outline: 1px red solid;
+}  
+@font-face {
+    font-family:Leaves;
+    src: url(enunciadoG/leaves_and_ground.ttf);
+}
+
+header{
+    height: 75px;
+    font-size: 60px;
+    text-shadow: 0px 0px 5px #666666; 
+    letter-spacing: 20px;
+    text-align: center;
+    animation: colorAndSpacing 4s 2;
+    animation-direction: alternate;
+    font-family: Leaves;
+}
+
+@keyframes colorAndSpacing {
+    to {
+        color: black;
+        letter-spacing: 20px;
+    }
+    from{
+        color: white;
+        letter-spacing: 2px;
+    }
+    
+}
+.cuerpo{
+    height: calc( 100vh - 75px);
+    background-image: url(enunciadoG/extendido.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cuerpo img{
+    position: relative;
+    float: right;
+    padding-top: 20px;
+}
+.menu{
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    background-color: rgba(66,65,60);
+    margin-top: 90px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+#links{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Leaves;
+    font-size: 40px;
+    letter-spacing: 12px;
+    width: 33%;
+}
+#links:hover{
+    text-decoration: underline;
+    animation: juntar 4s;
+}
+@keyframes juntar {
+    to {
+        letter-spacing: 0px;
+    }    
+}
+
+.contenido{
+    width: 100%;
+    display: flex;
+}
+
+.izq{
+    flex: 1.4;
+    border-right: 2px solid black ;
+    position: absolute;
+}
+.drch{
+    width: 30%;
+}
+.txt{
+    margin-top: 70px;
+    font-size: 25px;
+    text-indent: 40px;
+}
+.link{
+    text-align: center;
+}
+
+.fotos{
+    width: 100%;
+}
