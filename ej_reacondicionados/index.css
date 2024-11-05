@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Verdana' ;
+    outline: 1px red solid;
+}  
+.container {
+    display: grid;                       
+    grid-template-columns: 380px 176px 176px 176px; /* Anchos de columnas específicos */
+    grid-template-rows:240px 200px 80px;    
+    gap: 10px;                           
+    padding: 20px;
+    width: 960px;
+    background-color: #dddddf;
+    margin:auto;
+    margin-top:100px;
+    justify-content: space-evenly;  /* Distancia entre los items*/
+} 
+.item {
+    padding: 20px;
+    font-size: 18px;
+}
+.item img{
+    height: 125px;
+}
+.uno{
+    /* Empieza en la columna 1 y acaba en la 3 excluida */
+    grid-row: 1 / 4;
+    background-image: url(imagenes/hombrepeque¤o.jpg);
+}
+.dos{
+    grid-column: 2 / 5;
+}
+.tres{
+    /* Empieza en la fila 2 y acaba en la 4 excluida*/
+    grid-row:2 / 4;
+}
+.highlight {
+    color: orange;
+    font-weight: bold;
+}
+.txt{
+    margin-left: 25%;
+}
+.tab{
+    margin-left: 20px;
+}
