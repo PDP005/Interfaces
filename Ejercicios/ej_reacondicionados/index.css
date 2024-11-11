@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px red solid;
+}  
+.container {
+    /*sans-serif de 15px de tamaño*/
+    font-size: 15px;
+    font-family: sans-serif;
+    display: grid;                       
+    grid-template-columns: 380px 176px 176px 176px; /* Anchos de columnas específicos */
+    grid-template-rows:240px 200px 80px;    
+    gap: 10px;                           
+    padding: 20px;
+    width: 960px;
+    background-color: #dddddf;
+    margin:auto;
+    margin-top:100px;
+    justify-content: space-evenly;  /* Distancia entre los items*/
+} 
+.item {
+    padding: 20px;
+    font-size: 18px;
+}
+.item img{
+    height: 125px;
+}
+.uno{
+    /* Empieza en la columna 1 y acaba en la 3 excluida */
+    grid-row: 1 / 4;
+    background-image: url(imagenes/hombrepeque¤o.jpg);
+    position: relative;
+}
+.link {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+  }
+.dos{
+    grid-column: 2 / 5;
+}
+.dos h1{
+    color: #ff9966;
+}
+.imag{
+    position: absolute;
+}
+.imagen{
+    position: relative;
+    margin: auto;
+}
+.i1{
+    opacity: 1;
+    transition: 1s ease-in;
+}
+.i2{
+    opacity: 0;
+    transition: 1s ease-in;
+}
+.item2:hover > .i1{
+    opacity: 0;
+}
+.item2:hover > .i2{
+    opacity: 1;
+}
+.pal{
+    margin-top: 125px; 
+}
+.tres{
+    /* Empieza en la fila 2 y acaba en la 4 excluida*/
+    grid-row:2 / 4;
+}
+.highlight {
+    color: orange;
+    font-weight: bold;
+}
+.txt{
+    margin-left: 25%;
+}
+.tab{
+    margin-left: 20px;
+}
+footer {
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer-image {
+    width: 50px;
+    height: auto;
+    padding: 0.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+*{
+    background-color: aqua;
+}
+.container {
+    width: 100%;
+    grid-template-columns:100%;
+}
+.container > *{
+    grid-column: 1/-1;
+}
+.item {
+    text-align: center;
+}
+.imag{
+    left: 37%;
+}
+}
+  
