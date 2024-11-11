@@ -46,6 +46,10 @@
 .imag{
     position: absolute;
 }
+.imagen{
+    position: relative;
+    margin: auto;
+}
 .i1{
     opacity: 1;
     transition: 1s ease-in;
@@ -103,6 +107,8 @@ footer {
 .item {
     text-align: center;
 }
-/*  como ponga la imagen en medio  */
+.imag{
+    left: 37%;
+}
 }
   
