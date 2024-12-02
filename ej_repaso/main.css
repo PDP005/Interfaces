@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px red solid;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f0f8ff;
+}
+.header {
+  background-color: #0056b3;
+  border-radius: 20px;
+  height: 15vh;
+  color: #ffffff;
+  padding: 5px;
+  /* para que se ponga en una column */
+  flex-direction: column;
+  display: flex;
+  /* para que este constantemente centrado */
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  padding-bottom: 1%;
+}
+.links {
+  /* espaciado entre palabras  */
+  word-spacing: 3em;
+}
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.sidebar {
+  width: 15%;
+  background-color: #ff9800;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+.sidebar h2 {
+  color: white;
+  text-align: center;
+}
+.sidebar a {
+  background-color: #ffcc80;
+  color: white;
+}
+.sidebar a:hover {
+  transform: scale(1.1);
+  transition-duration: 1.1s;
+  translate: 5px;
+}
+.principal {
+  width: 84%;
+}
+.fondo {
+  background-image: url(teatro.jpg);
+  height: 80vh;
+  background-size: cover;
+}
+h2 {
+  padding: 20px;
+}
+.abajo {
+  padding-left: 30px;
+}
+.precios {
+  display: flex;
+  justify-content: space-between;
+}
+.caja {
+  background-color: #e3f2ff;
+  width: 31%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+}
