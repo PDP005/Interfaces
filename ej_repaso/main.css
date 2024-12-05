@@ -36,6 +36,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding-top: 12px;
+  margin-bottom: 10px;
 }
 .sidebar {
   width: 15%;
@@ -59,6 +60,8 @@ h1 {
 }
 .principal {
   width: 84%;
+  background-color: #e3f2ff;
+  border-radius: 10px;
 }
 .fondo {
   background-image: url(teatro.jpg);
@@ -100,8 +103,27 @@ h2 {
   margin-left: 25%;
   display: grid;
   grid-template-columns: auto 1fr; /* Anchos de columnas específicos */
+  gap: 10px;
 }
-button {
-  width: 50%;
-  margin-left: 25%;
+.formulario div,
+.formulario input,
+.formulario button,
+.formulario select {
+  padding: 10px;
+  border-radius: 10px;
+}
+.formulario button {
+  grid-column: 1 / -1;
+  background-color: #ff9800;
+  color: white;
+  /*Hace que ocupe todo el ancho de una fila*/
+}
+.formulario button:hover {
+  background-color: #ff6f00;
+}
+
+.pie {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
 }
