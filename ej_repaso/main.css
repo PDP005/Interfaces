@@ -77,11 +77,31 @@ h2 {
 }
 .caja {
   background-color: #e3f2ff;
-  width: 31%;
+  color: #0056b3;
+  font-weight: bold;
+  width: 30%;
   padding-left: 1%;
   padding-right: 1%;
   height: 100px;
   border-radius: 20px;
   text-align: center;
   justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.precio {
+  color: #ff6f00;
+  font-size: 30px;
+}
+.formulario {
+  width: 50%;
+  margin-left: 25%;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Anchos de columnas específicos */
+}
+button {
+  width: 50%;
+  margin-left: 25%;
 }
