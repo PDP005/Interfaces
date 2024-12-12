@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px red solid;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f0f8ff;
+}
+.header {
+  background-color: #0056b3;
+  border-radius: 20px;
+  height: 15vh;
+  color: #ffffff;
+  padding: 5px;
+  /* para que se ponga en una column */
+  flex-direction: column;
+  display: flex;
+  /* para que este constantemente centrado */
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  padding-bottom: 1%;
+}
+.links {
+  /* espaciado entre palabras  */
+  word-spacing: 3em;
+}
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  margin-bottom: 10px;
+}
+.sidebar {
+  width: 15%;
+  background-color: #ff9800;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+.sidebar:hover {
+  transform: scale(1.1);
+  transition-duration: 1.1s;
+}
+.sidebar h2 {
+  color: white;
+  text-align: center;
+}
+.sidebar a {
+  background-color: #ffcc80;
+  color: white;
+  margin: 5px 20px 0px 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.sidebar a:hover {
+  transform: scale(1.1);
+  transition-duration: 1.1s;
+  translate: 5px;
+  background-color: antiquewhite;
+}
+.principal {
+  width: 84%;
+  background-color: #e3f2ff;
+  border-radius: 10px;
+}
+.fondo {
+  background-image: url(teatro.jpg);
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+}
+h2 {
+  padding: 20px;
+}
+.title {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: violet;
+  animation: Abajo 6s /*dura la animacion*/ 2s /*tarda en aparecer */
+    /*3 paar que se repita*/ forwards;
+  opacity: 0;
+  font-size: 100px;
+  /*aqui es margins ?*/
+}
+@keyframes Abajo {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+    filter: blur(1.5em);
+  }
+  10% {
+    transform: translateY(0);
+    filter: blur(0);
+    filter: 0;
+    /*resetea todos a 0*/
+    opacity: 1;
+  }
+  99% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.subtitle {
+  margin-top: 100%;
+  color: white;
+}
+/*falta la animacion de abajo */
+.abajo {
+  padding-left: 30px;
+}
+.precios {
+  display: flex;
+  justify-content: space-between;
+}
+.caja {
+  background-color: #e3f2ff;
+  color: #0056b3;
+  font-weight: bold;
+  width: 30%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.precio {
+  color: #ff6f00;
+  font-size: 30px;
+}
+.formulario {
+  width: 50%;
+  margin-left: 25%;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Anchos de columnas específicos */
+  gap: 10px;
+}
+.formulario div,
+.formulario input,
+.formulario button,
+.formulario select {
+  padding: 10px;
+  border-radius: 10px;
+}
+.formulario button {
+  grid-column: 1 / -1;
+  background-color: #ff9800;
+  color: white;
+  /*Hace que ocupe todo el ancho de una fila*/
+}
+.formulario button:hover {
+  background-color: #ff6f00;
+}
+
+.pie {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+}
