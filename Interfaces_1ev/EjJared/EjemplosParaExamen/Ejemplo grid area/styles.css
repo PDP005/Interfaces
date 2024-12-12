@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px red solid; */
+}
+
+.caja,
+.minicaja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.uno {
+  background-color: antiquewhite;
+  grid-area: one;
+}
+
+.dos {
+  background-color: rgb(243, 215, 250);
+  grid-area: two;
+}
+
+.tres {
+  background-color: rgb(215, 215, 250);
+  grid-area: three;
+}
+
+.cuatro {
+  background-color: rgb(129, 245, 154);
+  grid-area: four;
+}
+
+.cinco {
+  background-color: rgb(255, 109, 109);
+  grid-area: five;
+}
+
+.seis {
+  background-color: rgb(4, 72, 111);
+  grid-area: six;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "seven ."
+    ". eight";
+}
+
+.siete {
+  background-color: rgb(122, 60, 255);
+  grid-area: seven;
+}
+
+.ocho {
+  background-color: rgb(255, 131, 251);
+  grid-area: eight;
+}
+
+.caja {
+  min-height: 33vw;
+  /* altura minima */
+}
+
+.minicaja {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "one one two"
+    "three . five"
+    "three six four";
+  background-color: #404040;
+}

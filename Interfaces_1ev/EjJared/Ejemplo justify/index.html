@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: 1px blue solid;
+      }
+      body {
+        background-color: #0f0f0f;
+      }
+
+      .container {
+        display: flex;
+        width: 100vw;
+      }
+
+      .container-item {
+        display: inline-block;
+        background-color: #573154;
+        width: 10%;
+        height: 33vh;
+      }
+
+      .between {
+        justify-content: space-between;
+      }
+
+      .evenly {
+        justify-content: space-evenly;
+      }
+
+      .around {
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container between">
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+    </div>
+    <div class="container evenly">
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+    </div>
+    <div class="container around">
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+      <div class="container-item"></div>
+    </div>
+  </body>
+</html>
