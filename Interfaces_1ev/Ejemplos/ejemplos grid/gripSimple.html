@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de CSS Grid Simple</title>
+    <style>
+        .container {
+            display: grid;                /* Activa CSS Grid en el contenedor */
+            grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+            gap: 10px;                    /* Espacio entre los elementos */
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .item {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
