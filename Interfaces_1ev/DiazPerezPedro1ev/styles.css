@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px red solid; */
+}
+@font-face {
+  font-family: Winter;
+  src: url(Winter\ Selfie.ttf);
+}
+header {
+  font-size: 3em;
+  font-family: Winter;
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+  align-items: center;
+  color: #799451;
+}
+.cuerpo {
+  gap: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas:
+    ". foto foto rutas madrid ."
+    ". foto foto senderismo senderismo .";
+  min-height: 100%;
+  height: 68vh;
+}
+.foto {
+  grid-area: foto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: Izq 6s forwards;
+  opacity: 0;
+}
+@keyframes Izq {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+    filter: blur(1.5em);
+  }
+  20% {
+    filter: blur(0);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: 0;
+  }
+}
+.foto img:hover {
+  scale: 1.5;
+  transition-duration: 3s;
+}
+.foto img {
+  height: 100%;
+  width: 100%;
+}
+.rutas {
+  grid-area: rutas;
+  border-radius: 10px;
+  background-color: #b3c6ef;
+  font-family: Winter;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 20px gray;
+  animation: Arriba 6s forwards;
+  opacity: 0;
+}
+@keyframes Arriba {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+    filter: blur(1.5em);
+  }
+  20% {
+    filter: blur(0);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: 0;
+  }
+}
+.madrid {
+  grid-area: madrid;
+  border-radius: 10px;
+  background-color: #799451;
+  font-family: Winter;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 20px gray;
+  animation: Derecha 6s forwards;
+  opacity: 0;
+}
+@keyframes Derecha {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+    filter: blur(1.5em);
+  }
+  20% {
+    filter: blur(0);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: 0;
+  }
+}
+
+.madrid a,
+.rutas a {
+  text-decoration: none;
+  color: white;
+}
+.senderismo {
+  border-radius: 10px;
+  grid-area: senderismo;
+  background-color: #475c6f;
+  font-family: Winter;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 20px gray;
+  animation: Abajo 6s forwards;
+  opacity: 0;
+}
+@keyframes Abajo {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(1.5em);
+  }
+  20% {
+    filter: blur(0);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: 0;
+  }
+}
+.dentro:hover {
+  scale: 1.2;
+  transition-duration: 3s;
+}
+.textomedio {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  color: #475c6f;
+  padding: 50px;
+}
+
+#bottom {
+  padding: 50px;
+  background-color: #475c6f;
+}
+.tit {
+  font-family: Winter;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+.cajas {
+  height: 200px;
+  width: 20%;
+  font-family: Winter;
+  border-radius: 10px;
+  color: white;
+  font-size: 1em;
+}
+.uno {
+  background-image: url(pedriza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dos {
+  background-image: url(guadarrama.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tres {
+  background-image: url(rascafria.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centro {
+  background-color: #799451;
+  height: 100%;
+  opacity: 0.8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 3s;
+  border-radius: 0px 0px 10px 10px;
+}
+.cajas:hover > .centro {
+  height: 20px;
+}
+.chat img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 134vh;
+  left: 97%;
+}
+@media screen and (max-width: 800px) {
+  * {
+    outline: 1px red solid;
+  }
+  header {
+    flex-direction: column;
+  }
+  .titulo {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+  }
+  .cuerpo {
+    grid-template-columns: 100%;
+    grid-template-areas: "foto" "rutas" "madrid" "senderismo";
+  }
+  .foto {
+    min-height: 500px;
+    margin-right: 0px;
+  }
+  .rutas,
+  .madrid,
+  .senderismo {
+    padding: 20px;
+  }
+  .textomedio {
+    padding-top: 270px;
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-bottom: 100px;
+  }
+  .content {
+    display: block;
+    width: 100%;
+  }
+  .cajas {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  #bottom {
+    padding-bottom: 10px;
+  }
+  .chat img {
+    position: absolute;
+    top: 264vh;
+    left: 90%;
+  }
+}
