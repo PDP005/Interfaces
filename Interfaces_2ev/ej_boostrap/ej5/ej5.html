@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../bootstrap-5.2.3/js/bootstrap.min.js"></script>
+    <link href="../bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <style>
+    .btn-morado {
+      background-color: #5b3a5b;
+      color: white;
+    }
+    body {
+      background: #9b90c8;
+      color: #5b3a5b;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <div class="container mt-3">
+      <!-- Datos Personales -->
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-6">
+          <label for="nombre1" class="form-label">Nombre</label>
+          <input
+            type="text"
+            id="nombre1"
+            class="form-control"
+            placeholder="Escribe tu nombre completo"
+          />
+        </div>
+        <div class="col-lg-6">
+          <label for="correo" class="form-label">Correo</label>
+          <input
+            type="email"
+            id="correo"
+            class="form-control"
+            placeholder="corr@gmail.com"
+          />
+        </div>
+      </div>
+
+      <!-- Datos de Contacto -->
+      <div class="row g-3 align-items-center mt-2">
+        <div class="col-lg-6">
+          <label for="pais" class="form-label">País</label>
+          <input
+            type="text"
+            id="pais"
+            class="form-control"
+            placeholder="Tu país"
+          />
+        </div>
+        <div class="col-lg-6">
+          <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+          <input type="date" id="fecha" class="form-control" />
+        </div>
+      </div>
+
+      <!-- Datos de Nacimiento -->
+      <div class="row g-3 align-items-center mt-2"></div>
+
+      <!-- Datos de Tarjeta de Crédito -->
+      <h2 class="mt-4">Datos de tarjeta de crédito</h2>
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-6">
+          <label for="numeroTarjeta" class="form-label">Número</label>
+          <input
+            type="text"
+            id="numeroTarjeta"
+            class="form-control"
+            placeholder="EJ: 4111 1111 1111 1111"
+          />
+        </div>
+        <div class="col-lg-6">
+          <label for="nombreTarjeta" class="form-label">Nombre</label>
+          <input
+            type="text"
+            id="nombreTarjeta"
+            class="form-control"
+            placeholder="Nombre del propietario"
+          />
+        </div>
+      </div>
+
+      <!-- Botón de Compra -->
+      <div class="row mt-3">
+        <div class="col">
+          <button class="btn btn-morado">Realizar compra</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
